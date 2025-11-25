@@ -1,146 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <!-- 수정 포트폴리오-->
-    <title>jina portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Fonts (원하면 다른 폰트로 바꿔도 됨) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <title>JJIN PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css"> <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="inner">
-            <!--수정로고-->
-            <div class="logo">JINA</div>
-            <!--두개만 남기기-->>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo"><a href="#home">JIIN</a></h1>
             <nav class="main-nav">
-                <a href="#" class="active">Main</a>
-                <a href="#project">Projects</a>
-            <!--
-                <a href="#">Press</a>
-                <a href="#">Notice</a>
-                <a href="#">About</a>
-                -->
+                <ul>
+                    <!-- <li><a href="#profile">PROFILE</a></li> -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#uiux">UI/UX</a></li>
+                    <li><a href="#detail">Image</a></li>
+                    <!-- <li><a href="#event-sns">이벤트/SNS</a></li>
+                    <li><a href="#personal">개인작업</a></li>
+                    <li><a href="#prototype">프로토타입</a></li> -->
+                </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO / INTRO -->
-    <main>
-        <section class="intro">
-            <div class="inner">
-                <p>
-                    <strong>yoon designer</strong> I'm from korea. represents the initials of 'ordinary art original
-                    art', a space that introduces art creating a point of natural sympathy
-                    for the ordinary daily life of the viewer, the artist’s personal
-                    experience, and the artistic spirit inherent in the work.
-                </p>
+<section id="home" class="hero-banner">
+        <div class="container">
+            <h2>Product Designer </h2>
+            <p>
+                안녕하세요. Product Designer <strong>JJIN</strong>의 포트폴리오 입니다.<br />
+                사용자의 맥락을 이해하고, 서비스 전체 플로우 속에서 디자인의 역할을 고민합니다.
+            </p>
             </div>
-        </section>
+    </section>
 
-        <!-- CURRENT EXHIBITION -->
-        <section class="section">
-            <div class="inner">
-                <h2 class="section-title">MY Recent</h2>
-
-                <div class="current-grid">
-                    <!-- 왼쪽 이미지 -->
-                    <article class="current-item">
-                        <div class="image-wrap">
-                            <!-- src 를 네 이미지 파일로 바꿔줘 -->
-                            <img src="images/8.png" alt="Current Exhibition Image Left">
-                        </div>
-                        <div class="caption">
-                            <p>Kyu Hwa Moon, Jae Youl Jeoung, Sung Joo Ham: Life in Between</p>
-                            <p>11/19–12/27/2025</p>
-                        </div>
-                    </article>
-
-                    <!-- 오른쪽 이미지 -->
-                    <article class="current-item">
-                        <div class="image-wrap">
-                            <img src="images/7.png" alt="Current Exhibition Image Right">
-                        </div>
-                        <div class="caption caption-right">
-                            <a href="#">View more ↗</a>
-                        </div>
-                    </article>
-
-                    <!--수정 이미지 추가-->
-                    <article class="current-item">
-                        <div class="image-wrap">
-                            <img src="images/9.png" alt="Current Exhibition Image Right">
-                        </div>
-                        <div class="caption caption-right">
-                            <a href="#">View more ↗</a>
-                        </div>
-                    </article>
+    <main class="portfolio-sections">
+        
+        <!-- <section id="profile" class="portfolio-category profile-section">
+            <div class="container">
+                <h3>✨ PROFILE</h3>
+                <p>나에 대한 더 자세한 이야기와 경력 사항을 확인해 보세요.</p>
+                <div class="profile-detail-area">
+                    <p>학력/경력/사용툴(Sketch, Figma, Ps, Ai) 등의 상세 내용을 여기에 작성합니다.</p>
                 </div>
+                <a href="profile_detail.html" class="btn-more">자세히 보기 &gt;</a>
             </div>
-        </section>
+        </section> -->
 
-        <!-- PAST EXHIBITION 수정 / 섹션전체 삭제하기 h2/id=projects-->
-        <section class="section">
-    <div class="inner">
-        <h2 id="project" class="section-title">Projects</h2>
-
-        <div class="projects-grid">
-            <div class="project-item"><img src="images/4.png" alt=""></div>
-            <div class="project-item"><img src="images/5.png" alt=""></div>
-            <div class="project-item"><img src="images/5.png" alt=""></div>
-            <div class="project-item"><img src="images/5.png" alt=""></div>
-            <div class="project-item"><img src="images/5.png" alt=""></div>
-            <div class="project-item"><img src="images/5.png" alt=""></div>
-        </div>
-
-    </div>
-</section>
-        <!--여기까지 삭제-->
-
-        <!-- ABOUT + SPACE IMAGE -->
-        <section class="section section-about">
-            <div class="inner about-layout">
-                <div class="about-text">
-                    <button class="about-button">About</button>
-
-                    <div class="about-info">
-                        <p>나만의 내용으로 변경</p>
-                        <p>32-11, Samseong-ro 63-gil, Gangnam-gu, Seoul, Republic of Korea</p>
-                        <p>E oaoagallery@gmail.com<br>T 02.6207.3211<br>@oaoa_gallery</p>
-
-                        <p class="about-hours">
-                            수 - 토요일, 11 - 18시 (월, 화, 일요일, 공휴일 휴관)<br>
-                            Wednesday - Saturday, 11am - 18pm<br>
-                            (Closed on Mon, Tue, Sunday and Holidays)
-                        </p>
+        <section id="uiux" class="portfolio-category">
+            <div class="container">
+                <h3>UI/UX</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="images/01.png" alt="포폴01">
                     </div>
-                </div>
-
-                <div class="about-image">
-                    <img src="images/na.png" alt="oaoa gallery space">
-                </div>
+                    <div class="portfolio-item">
+                        <img src="images/02.png" alt="포폴02">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/03.png" alt="포폴03">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/04.png" alt="포폴04">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/05.png" alt="포폴05">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/06.png" alt="포폴06">
+                    </div>
+                    </div>
+                <a href="uiux_page.html" class="btn-more">더보기 &gt;</a>
             </div>
         </section>
+
+        <section id="detail" class="portfolio-category gray-bg">
+            <div class="container">
+                <h3>Image</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="images/a01.png" alt="포폴a01">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/a02.png" alt="포폴a02">
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/a03.png" alt="포폴a03">
+                    </div>
+                    <!-- <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div> -->
+                </div>
+                <a href="detail_page.html" class="btn-more">더보기 &gt;</a>
+            </div>
+        </section>
+
+        <!-- <section id="event-sns" class="portfolio-category">
+            <div class="container">
+                <h3>📢 이벤트/SNS DESIGN</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                </div>
+                <a href="event_sns_page.html" class="btn-more">더보기 &gt;</a>
+            </div>
+        </section>
+        
+        <section id="personal" class="portfolio-category gray-bg">
+            <div class="container">
+                <h3>💡 개인작업/습작</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                </div>
+                <a href="personal_page.html" class="btn-more">더보기 &gt;</a>
+            </div>
+        </section>
+        
+        <section id="prototype" class="portfolio-category">
+            <div class="container">
+                <h3>🧪 PROTOTYPE</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                </div>
+                <a href="prototype_page.html" class="btn-more">더보기 &gt;</a>
+            </div>
+        </section> -->
+
     </main>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="inner">
-            <p>Copyright 2022. oaoa gallery All rights reserved.</p>
-
-            <a href="#" class="to-top" aria-label="Back to top">
-                ↑
-            </a>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="contact-info">
+                <h4>Connect With Me</h4>
+                <p>JJIN / YounJinA</p>
+                <p>Email: <a href="mailto:#">ajjin2765@gmail.com</a></p>
+                <!-- <p>Phone: 010-xxxx-xxxx</p> -->
+                <!-- <p>Social: [Link to your social media]</p> -->
+            </div>
+            <p class="copyright">© 2025 JJIN.Design. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
